@@ -1,0 +1,89 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root {
+    --primary-color: #56d332;
+    --secundary-color: DimGrey;
+    --tertiary-color: Gainsboro;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+}
+
+#container {
+    height: 525px;
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    /*box-shadow: 5px 5px 5px var(--tertiary-color);*/
+    border-radius: 20px;
+}
+
+header {
+    background: var(--tertiary-color);
+    color: var(--secundary-color);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+}
+
+#ContentPlaceHolder1_Image1 {
+    width: 360px;
+    margin-top: -14px;
+}
+
+#tipsForm {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#lCadastro {
+    padding-left: 85px;
+}
+
+#lTabela {
+    padding-left: 85px;
+}
+
+footer {
+    padding-left: 60px;
+}
+
+#formInput {
+    background: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px;
+    margin-lef: 24px;
+}
+
+.txbInput {
+    margin-left: 24px;
+}
+
+.txbEntrada {
+    margin-left: 33px;
+}
+
+.formSubmit {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: var(--primary-color);
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+}
+
+nav {
+    padding-left: 35px
+}
+

@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPagePrincipal.Master.cs" Inherits="waProduto.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="container">
+        <form id="form1" runat="server">
+            <header> <h1>Produtos Web</h1>
+                <nav style="width: 256px; margin-top: 0px">
+                    &nbsp;<asp:Menu ID="Menu1" runat="server" BackColor="#00CC00" DynamicHorizontalOffset="2" Font-Bold="True" Font-Names="Verdana" Font-Size="Medium" ForeColor="White" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/index.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Cadastro.aspx" Text="Cadastro" Value="Cadastro"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Tabela.aspx" Text="Tabela" Value="Tabela"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#FFCC66" />
+                    </asp:Menu>
+                </nav>
+            </header>
+            <main>
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+               </div>
+            </main> 
+            <footer>
+                <p>Site desenvolvido por 
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://github.com/mauro-rondi" Target="_blank">Mauro Rondi.</asp:HyperLink>
+                </p>
+            </footer>
+        </form>
+    </div>
+</body>
+</html>
